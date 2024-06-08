@@ -1,0 +1,53 @@
+.container {
+    height: 80vh;
+    width: 80vw;
+    background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+    margin: 5% auto;
+    box-shadow: 0px 0px 10px black;
+    /* position:relative; */
+}
+
+.info {
+    color: white;
+    display: inline-block;
+    height: 100%;
+    width: 46%;
+    margin: 20px;
+
+}
+
+
+p {
+    margin: 50px;
+    font-size: 20px;
+}
+
+
+
+.shoe img {
+    /* display: inline-block; */
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    right: 0px;
+    top: 10%;
+}
+
+.shoe img:hover {
+    right: 0px;
+    top: 15px;
+    width: 900px;
+    height: 600px;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: skewY(10deg);
+    background: linear-gradient(to right, #b92b27, #1565c0);
+    z-index: -1;
+    box-shadow: 0px 0px 10px black;
+}
+
+
